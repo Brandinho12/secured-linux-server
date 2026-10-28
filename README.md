@@ -30,21 +30,27 @@ The environment was built in a controlled virtual lab using Ubuntu Server as the
 ## Security Controls Implemented
 
 ### 1. User and Access Management
+
 Configured user and group accounts, file permissions, and role-based access controls to help restrict access to system resources.
 
 ### 2. SSH Security
+
 Configured SSH for remote server administration as part of the server-hardening process.
 
 ### 3. Firewall Configuration
+
 Used UFW to manage firewall rules and control permitted network traffic.
 
 ### 4. Intrusion Prevention
+
 Integrated Fail2Ban to help protect against repeated failed authentication attempts.
 
 ### 5. Security Auditing
+
 Used Lynis to assess the Linux system's security configuration and identify areas for improvement.
 
 ### 6. Automated Security Checks
+
 Developed a Bash script named `security_check.sh` to collect security-related system information and generate reports. Cron was used to schedule routine execution.
 
 ## Lab Environment
@@ -57,6 +63,30 @@ The project used a virtualized environment containing:
 
 Testing was conducted in a controlled lab environment.
 
+## Implementation Evidence
+
+The following screenshots provide visual evidence of selected configurations and testing activities from the project.
+
+### 1. Fail2Ban Configuration
+
+![Fail2Ban configuration](screenshots/Fail2ban%20config.jpg)
+
+### 2. Fail2Ban Verification
+
+![Fail2Ban verification](screenshots/fail2ban-verification.jpg)
+
+### 3. Security Automation
+
+![Security automation](screenshots/security-automation.jpg)
+
+### 4. SSH Security Testing
+
+![SSH security testing](screenshots/ssh-security-testing.jpg)
+
+### 5. UFW Firewall Configuration
+
+![UFW firewall configuration](screenshots/ufw-firewall-configuration.jpg)
+
 ## Project Scope
 
 This was an academic virtualization-based security project. It did not involve deploying the environment to AWS, Microsoft Azure, or Google Cloud.
@@ -66,7 +96,6 @@ The project provides a foundation for further work in Linux security, cloud infr
 ## Future Improvements
 
 - Recreate and publish the implementation scripts and configuration documentation.
-- Add sanitized screenshots and test evidence.
 - Expand security monitoring and log analysis.
 - Rebuild the lab and explore equivalent security controls in AWS.
 - Develop infrastructure-as-code and automated security testing skills.
