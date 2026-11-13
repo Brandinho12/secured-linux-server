@@ -50,10 +50,7 @@ Integrated Fail2Ban to help protect against repeated failed authentication attem
 Used Lynis to assess the Linux system's security configuration and identify areas for improvement.
 
 ### 6. Automated Security Checks
-
-Developed a Bash script named `security_check.sh` to collect security-related system information and generate reports. Cron was used to schedule routine execution.
-
-## Lab Environment
+Developed a Bash script, [`security_check.sh`](security_check.sh), to collect security-related system information and generate a security report. The script checks the current user, SSH service status, firewall status, disk usage, and memory usage. Cron was used to schedule routine execution## Lab Environment
 
 The project used a virtualized environment containing:
 
